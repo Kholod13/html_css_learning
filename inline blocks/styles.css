@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-left: 30px;
+    color: grey;
+}
+span{
+    display: inline-block;
+    background-color: grey;
+    font-size: 40px;
+    padding: 10px;
+}
+.red-text{
+    color: red;
+}
+.black-text{
+    color: black;
+}
