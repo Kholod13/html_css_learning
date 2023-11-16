@@ -1,0 +1,74 @@
+/*task1*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+p{
+    text-align: justify;
+}
+
+sup{
+    color: blue;
+    font-weight: bold;
+}
+
+.mini-text{
+    font-size: 14px;
+}
+/*task2*/
+.centre-title{
+    text-align: center;
+    font-family: monospace, sans-serif;
+}
+.citate-right{
+    text-align: right;
+    margin-right: 50px;
+}
+.citate-right-small{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+.opacity-lv1{
+    opacity: 70%;
+}
+.opacity-lv2{
+    opacity: 50%;
+}
+.opacity-lv3{
+    opacity: 40%;
+}
+.opacity-lv4{
+    opacity: 25%;
+}
+.opacity-lv5{
+    opacity: 15%;
+}
+.opacity-lv6{
+    opacity: 10%;
+}
+.First-letter{
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+/*task3*/
+.subtitle{
+    font-weight: 900px;
+    font-size: 16px;
+}
+.sample{
+    font-size: 22px;
+    background-color: palevioletred;
+    padding: 5px;
+}
+.center{
+    text-align: center;
+}
+.red-letter{
+    color: brown;
+    font-weight: bold;
+    font-style: italic;
+}
