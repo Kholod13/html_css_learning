@@ -34,4 +34,49 @@ body{
 
 /*task2*/
 
+#block-task-2{
+    padding: 20px 40px;
+}
 
+#block-task-2 ul{
+    list-style: none;
+    padding: 0px;
+    background-color: #A5CCDB;
+}
+#block-task-2 ul li{
+    padding: 15px 0;
+    padding-left: 50px;
+}
+#block-task-2 ul li:nth-child(2n-1){
+    background-color: #ADD9E6;
+}
+#block-task-2 img{
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+}
+#block-task-2 li::before{
+    content: url('icons/unchecked_16.png');
+    padding-right: 20px;
+}
+.checked-li{
+    background-color: #E2E2E2 !important;
+    text-decoration: line-through;
+}
+
+#block-task-2 .checked-li::before{
+    content: url('icons/checked_16.png');
+    padding-right: 20px;
+}
+
+/*task3*/
+
+#block-task-3{
+    padding: 10px;
+}
+#block-task-3 .links{
+    color: #131A75;
+}
+#block-task-3 .color-quote{
+    color: gray;
+}
