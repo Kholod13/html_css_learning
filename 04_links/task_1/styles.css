@@ -1,0 +1,19 @@
+body{
+    font-family: monospace sans-serif;
+    text-align: center;
+}
+.row-items{
+    list-style: none;
+    padding: 0;
+    max-width: 1000px;
+    text-align: left;
+    margin: auto;
+}
+.row-items li{
+    display: inline-block;
+    border: 1px black solid;
+
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
