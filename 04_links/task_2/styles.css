@@ -1,0 +1,33 @@
+body{
+    padding: 20px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    max-width: 200px;
+}
+nav ul li img{
+    width: 50px;
+}
+nav ul li{
+    position: relative;
+    max-height: 50px;
+    background-color: #808080;
+    padding: 05px 0px;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+}
+nav ul li p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 38%;
+}
+nav ul li:hover{
+    background-color: #5E5E5E;
+}
+nav ul li:active{
+    background-color: #000;
+}
