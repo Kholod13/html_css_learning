@@ -1,0 +1,81 @@
+div table{
+    background-color: #F3F3F3;
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    font-size: 14px;
+}
+div table tr:first-child{
+    color: white;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+tr:first-child th{
+    padding: 0 30px;
+}
+tr:first-child th p span{
+    font-size: 30px;
+    margin-top: 15px;
+    display: inline-block;
+}
+tr:first-child th:first-child{
+    background-color: #7987AA;
+    border-radius: 10px 0 0 0;
+    padding: 40px;
+}
+tr:first-child th:nth-child(2){
+    background-color: #4F628D;
+}
+tr:first-child th:nth-child(3){
+    background-color: #2F4173;
+}
+tr:first-child th:nth-child(4){
+    background-color: #162954;
+}
+tr:first-child th:nth-child(5){
+    background-color: #071538;
+}
+tr:first-child th:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+tr th{
+    padding: 10px 20px;
+}
+tr th:first-child{
+    text-align: left;
+}
+tr:nth-child(2n) th{
+    background-color: #DBDBDB;
+}
+tr:nth-child(2n-1) th{
+    background-color: #ECECEC;
+}
+tr th button{
+    text-transform: uppercase;
+    color: gray;
+    padding: 5px 20px;
+    border-radius: 0;
+    border: 1px solid gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+tr:nth-child(2n) th:nth-child(2n){
+    background-color: #E7E7E7;
+}
+tr:nth-child(2n+1) th:nth-child(2n){
+    background-color: #F3F3F3;
+}
+tr:first-child th:nth-child(2){
+    background-color: #4F628D;
+}
+tr:first-child th:nth-child(3){
+    background-color: #2F4173;
+}
+tr:first-child th:nth-child(4){
+    background-color: #162954;
+}
+tr:first-child th:nth-child(5){
+    background-color: #071538;
+}
