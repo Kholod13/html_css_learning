@@ -1,0 +1,23 @@
+.border{
+    border: 4px solid orange;
+    width: 500px;
+    height: 40px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.square{
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    position: absolute;
+    animation: animation 3s linear infinite;
+}
+@keyframes animation{
+    from{
+        left: -10%;
+    }
+    to{
+        left: 100%;
+    }
+}
