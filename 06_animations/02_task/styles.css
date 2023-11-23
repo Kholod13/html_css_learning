@@ -18,3 +18,7 @@ button img:hover{
     margin: -100px 0 -100px -85px;
     transition: 0.3s;
 }
+div{
+    display: flex;
+    justify-content: center;
+}
