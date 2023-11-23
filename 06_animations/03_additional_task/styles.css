@@ -7,3 +7,47 @@ h1{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.block div{
+    display: flex;
+    justify-content: center;
+}
+.block div:last-child img{
+    transform: rotate(90deg);
+    animation: slide ease-in-out 1s;
+}
+.block .row{
+    align-items:flex-end;
+    height: 280px;
+}
+.block .row div:nth-child(1){
+    height: 120px;
+    transform: rotate(-30deg);
+    width: 200px;
+    animation: slide ease-in-out 1s;
+}
+.block .row div:nth-child(4){
+    height: 120px;
+    transform: rotate(120deg);
+    width: 200px;
+    animation: slide ease-in-out 1s;
+}
+.block .row div:nth-child(2){
+    height: 220px;
+    transform: rotate(-15deg);
+    width: 200px;
+    align-self: flex-start;
+    animation: slide ease-in-out 1s;
+}
+.block .row div:nth-child(3){
+    height: 220px;
+    transform: rotate(15deg);
+    width: 200px;
+    align-self: flex-start;
+    padding-left: 40px;
+    animation: slide ease-in-out 1s;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(400px);
+    }
+}
