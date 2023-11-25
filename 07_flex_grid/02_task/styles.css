@@ -1,0 +1,50 @@
+body{
+    margin: 30px;
+}
+.item{
+    display: flex;
+}
+.item div{
+    display: flex;
+}
+.message{
+    background-color: #FFB6C1;
+    padding: 20px;
+    border-radius: 15px 15px 15px 5px;
+    width: 350px;
+    margin: 5px 0;
+}
+.item div div p{
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+    
+}
+.item div div p:last-child{
+    color: gray;
+    font-size: 14px;
+}
+.item div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 130px;
+}
+.wrapper{
+    margin: auto;
+    max-width: 780px;
+}
+.item:nth-child(2n) .message{
+    background-color: #ADD9E6;
+}
+.item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.item:nth-child(2n) div{
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.item:nth-child(2n) div div{
+    flex-direction: column;
+}
