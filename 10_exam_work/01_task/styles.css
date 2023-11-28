@@ -1,0 +1,91 @@
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+body,p,h2{padding: 0;margin: 0;}img{display: block; width: 100%;}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.company h2{
+    padding: 30px;
+    font-size: 22px;
+    color: #454345;
+    border-bottom: 1px gray solid;
+}
+.company nav{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.company nav button{
+    display: flex;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    color: gray;
+    padding: 0;
+    align-items: center;
+    background-color: transparent;
+}
+.company nav button div{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 10px 20px;
+}
+.company nav button p{
+    margin: 10px 0px 10px 50px;
+}
+.company nav .dashboard{
+    background: url(images/dashboard_gray.svg) 20px center no-repeat;
+    background-size: 20px 20px;
+}
+.company nav .profile{
+    background: url(images/account_gray.svg) 20px center no-repeat;
+    background-size: 20px 20px;
+}
+.company nav .maps{
+    background: url(images/map_gray.svg) 20px center no-repeat;
+    background-size: 20px 20px;
+}
+.company nav .notifications{
+    background: url(images/notify_gray.svg) 20px center no-repeat;
+    background-size: 20px 20px;
+}
+.company nav .support{
+    background: url(images/support_gray.svg) 20px center no-repeat;
+    background-size: 20px 20px;
+}
+
+.company nav .dashboard:focus{
+    color: white;
+    background: url(images/dashboard_white.svg) 20px center no-repeat, #C32056;
+    background-size: 20px 20px;
+    transition: 0.5s;
+}
+.company nav .profile:focus{
+    color: white;
+    background: url(images/account_white.svg) 20px center no-repeat, #C32056;
+    background-size: 20px 20px;
+    transition: 0.5s;
+}
+.company nav .maps:focus{
+    color: white;
+    background: url(images/map_white.png) 20px center no-repeat, #C32056;
+    background-size: 20px 20px;
+    transition: 0.5s;
+}
+.company nav .notifications:focus{
+    color: white;
+    background: url(images/notify_white.png) 20px center no-repeat, #C32056;
+    background-size: 20px 20px;
+    transition: 0.5s;
+}
+.company nav .support:focus{
+    color: white;
+    background: url(images/support_white.png) 20px center no-repeat, #C32056;
+    background-size: 20px 20px;
+    transition: 0.5s;
+}
+/* main */
+
