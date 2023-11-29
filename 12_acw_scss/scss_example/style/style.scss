@@ -1,0 +1,160 @@
+$indent: 4vw;
+$indentV: 1vh;
+
+$bgDark: #282f79;
+$fontDark: #284e79;
+$bgLight: lighten($bgDark, 60%);
+$fontLight: #eee;
+
+$font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+@mixin reset() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin colorDark() {
+    background-color: $bgDark;
+    color: $bgLight;
+}
+
+@mixin colorLight() {
+    background-color: $bgLight;
+    color: $fontDark;
+}
+
+@mixin flex($dir, $side) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $side;
+}
+
+@mixin border($col, $perc) {
+    border: 2px solid $col;
+    border-radius: $perc 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+body {
+    @include reset();
+    @include colorDark();
+    font-family: $font;
+    font-size: 18px;
+
+    // border-left: 10px;
+    // border-top: 10px;
+}
+
+
+header {
+    @include flex(row, space-between);
+    @include colorDark();
+    padding: $indentV $indent;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    a {
+        color: $fontLight;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    nav {
+        ul {
+            @include reset();
+
+            li {
+                display: inline-block;
+                margin-left: $indentV;
+
+                a {
+                    display: block;
+                    font-size: 100%;
+                    padding: $indentV;
+                    text-transform: capitalize;
+                    @include border(transparent, 20%);
+
+                    &:hover,
+                    &.active {
+                        @include border($fontLight, 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#home {
+    @include flex(column, center);
+    height: 80vh;
+    padding: $indent;
+    background-image: url(../images/bg_header.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    div {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        color: $fontLight;
+        text-shadow: 1px -1px 3px $fontDark;
+        position: relative;
+        z-index: 10;
+        font-size: 1.5rem;
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        button {
+            background: none;
+            @include border($fontLight, 20%);
+            @include colorDark();
+            padding: $indentV * 2 $indentV * 3;
+            text-transform: uppercase;
+            font-family: $font;
+
+            &:focus {
+                outline: transparent;
+                box-shadow: 1px -1px 3px $fontDark;
+            }
+        }
+    }
+}
+
+#services {
+    @include reset();
+    @include colorLight();
+    padding: $indentV $indent;
+
+    h2 {
+        text-align: center;
+    }
+
+    >div {
+        @include flex(row, space-between);
+
+        ol {
+            padding: 0;
+            list-style-position: inside;
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+}
+
+#features {
+    @include reset();
+    @include colorDark();
+    padding: $indentV $indent;
+}
