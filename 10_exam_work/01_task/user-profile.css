@@ -206,13 +206,14 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 105px 30px 0 0;
     background-color: #F6F6F6;
     box-shadow: 2px 2px 2px 2px gray;
     height: auto;
     padding: 0 20px;
     text-align: center;
     padding-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
 }
 .bio .color p{
     padding-bottom: 10px;
@@ -243,4 +244,40 @@ footer a{
 }
 .user-profile{
     margin-left: 17%;
+}
+/* adaptive */
+
+.user-profile .title-block button{
+    width: 35px;
+    border: 0;
+    background-color: transparent;
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .user-profile .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bio .color{
+        margin: 30px 30px;
+    }
+    .edit{
+        margin-right: 10px;
+    }
+}
+/* menu */
+@media screen and (max-width:801px){
+    .company{
+        display: none;
+    }
+    .user-profile{
+        margin: 0;
+        border-left: none;
+    }
+    .user-profile .title-block button{
+        display: inline-block;
+        margin-right: 10px;
+        
+    }
 }
