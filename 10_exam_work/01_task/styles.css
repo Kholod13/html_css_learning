@@ -317,3 +317,24 @@ footer a{
 .dashboard{
     margin-left: 17%;
 }
+/* adaptive */
+
+@media screen and (min-width: 799px) and (max-width: 1000px){
+    .items-numbers{
+        display: none;
+    }
+    .items-lists{
+        display: flex;
+        flex-direction: column;
+    }
+    .items-lists .item{
+        margin-bottom: 30px;
+    }
+    .items-lists .item:last-child{
+        margin-bottom: 00px;
+    }
+    .dashboard{
+        width: 100%;
+        
+    }
+}
