@@ -14,7 +14,7 @@ body, .wrapper{
         max-width: 1200px;
     }
 }
-
+//consultation button
 .button{
     width: 100px;
     height: 100px;
@@ -34,7 +34,7 @@ body, .wrapper{
         background-color: $hover_color;
     }
 }
-
+//block1
 .intro{
     text-align: center;
     background: url("../images/block1-img1.jpg") center;
@@ -80,6 +80,37 @@ body, .wrapper{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+//block2
+.info-1{
+    padding: 120px 0;
+    & .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $gray_clr;
+    }
+    & .services-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        margin: 50px 0 120px 0;
+        & .item{
+            margin-bottom: 50px;
+            & .item-title{
+                color: $black_clr;
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 15px;
+                line-height: 24.52px;
+            }
+            & .item-text{
+                font-weight: 400px;
+                font-size: 14px;
+                color:$black_clr;
+                line-height: 19.07px;
+            }
         }
     }
 }

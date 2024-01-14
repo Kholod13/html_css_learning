@@ -92,3 +92,34 @@ body .container, .wrapper .container {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.info-1 {
+  padding: 120px 0;
+}
+.info-1 .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #868585;
+}
+.info-1 .services-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 50px 0 120px 0;
+}
+.info-1 .services-block .item {
+  margin-bottom: 50px;
+}
+.info-1 .services-block .item .item-title {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  line-height: 24.52px;
+}
+.info-1 .services-block .item .item-text {
+  font-weight: 400px;
+  font-size: 14px;
+  color: #303030;
+  line-height: 19.07px;
+}
