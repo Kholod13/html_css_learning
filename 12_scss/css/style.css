@@ -6,7 +6,8 @@ body, .wrapper {
 }
 body .container, .wrapper .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1240px;
+  padding: 0 20px;
 }
 
 .button {
@@ -37,7 +38,7 @@ body .container, .wrapper .container {
 
 .intro {
   text-align: center;
-  background: url("../images/block1-img1.jpg") center;
+  background: url("../images/block1-img1.jpg") center top no-repeat;
   color: white;
 }
 .intro .logo-block {
@@ -68,8 +69,8 @@ body .container, .wrapper .container {
   margin-top: 55px;
 }
 .intro .socials-block {
-  margin-top: 250px;
-  padding-bottom: 40px;
+  margin-top: 240px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +92,14 @@ body .container, .wrapper .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.intro .socials-block button :hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .info-1 {
@@ -101,25 +110,45 @@ body .container, .wrapper .container {
   font-weight: 700;
   color: #868585;
 }
-.info-1 .services-block {
+.info-1 .services .services-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   margin: 50px 0 120px 0;
 }
-.info-1 .services-block .item {
+.info-1 .services .services-block .item {
   margin-bottom: 50px;
 }
-.info-1 .services-block .item .item-title {
+.info-1 .services .services-block .item .item-title {
   color: #303030;
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 15px;
   line-height: 24.52px;
 }
-.info-1 .services-block .item .item-text {
+.info-1 .services .services-block .item .item-text {
   font-weight: 400px;
   font-size: 14px;
   color: #303030;
   line-height: 19.07px;
+}
+.info-1 .services .services-img img {
+  width: 100%;
+}
+.info-1 .tariff .title {
+  margin-bottom: 70px;
+}
+.info-1 .tariff .tariff-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.info-1 .tariff .tariff-block .tariff-img-block .title {
+  font-size: 18px;
+  line-height: 24.52px;
+  margin-bottom: 30px;
+  color: #303030;
+}
+.info-1 .tariff .tariff-block .tariff-img-block .img-block img {
+  width: 100%;
 }

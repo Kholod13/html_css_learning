@@ -11,7 +11,8 @@ body, .wrapper{
     max-width: 1920px;
     .container{
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1240px;
+        padding: 0 20px;
     }
 }
 //consultation button
@@ -37,7 +38,7 @@ body, .wrapper{
 //block1
 .intro{
     text-align: center;
-    background: url("../images/block1-img1.jpg") center;
+    background: url("../images/block1-img1.jpg") center top no-repeat;
     color: white;
     & .logo-block{
         padding-top: 50px;
@@ -68,8 +69,8 @@ body, .wrapper{
         margin-top: 55px;
     }
     & .socials-block{
-        margin-top: 250px;
-        padding-bottom: 40px;
+        margin-top: 240px;
+        padding-bottom: 30px;
         display: flex;
         justify-content: center;
         & button{
@@ -80,6 +81,11 @@ body, .wrapper{
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: 0.5s;
+            & :hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: 0.5s;
+            }
         }
     }
 }
@@ -91,25 +97,98 @@ body, .wrapper{
         font-weight: 700;
         color: $gray_clr;
     }
-    & .services-block{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        margin: 50px 0 120px 0;
-        & .item{
-            margin-bottom: 50px;
-            & .item-title{
-                color: $black_clr;
-                font-size: 18px;
-                font-weight: 700;
-                padding-bottom: 15px;
-                line-height: 24.52px;
+    & .services{
+        & .services-block{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin: 50px 0 120px 0;
+            & .item{
+                margin-bottom: 50px;
+                & .item-title{
+                    color: $black_clr;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding-bottom: 15px;
+                    line-height: 24.52px;
+                }
+                & .item-text{
+                    font-weight: 400px;
+                    font-size: 14px;
+                    color:$black_clr;
+                    line-height: 19.07px;
+                }
             }
-            & .item-text{
-                font-weight: 400px;
-                font-size: 14px;
-                color:$black_clr;
-                line-height: 19.07px;
+        }
+        & .services-img{
+            & img{
+                width: 100%;
+            }
+        }
+    }
+    & .tariff{
+        & .title{
+            margin-bottom: 70px;
+        }
+        & .tariff-block{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            & .items{
+                & .menu{
+                    & .button-sale{
+
+                    }
+                    & .button-pins{
+                        
+                    }
+                    & .button-restr{
+                        
+                    }
+                }
+                & .item{
+                    & .item-img{
+                        & img{
+
+                        }
+                    }
+                    & .item-description{
+                        & .text{
+
+                        }
+                        & .buttons{
+                            & .left{
+
+                            }
+                            & .right{
+
+                            }
+                        }
+                    }
+                }
+                & .text-blocks{
+                    & .block{
+                        & .title{
+
+                        }
+                        & .text{
+                            
+                        }
+                    }
+                }
+            }
+            & .tariff-img-block{
+                & .title{
+                    font-size: 18px;
+                    line-height: 24.52px;
+                    margin-bottom: 30px;
+                    color: $black_clr;
+                }
+                & .img-block{
+                    & img{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
