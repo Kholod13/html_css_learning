@@ -213,3 +213,17 @@ body, .wrapper{
         }
     }
 }
+//block3
+.quote{
+    background: url("../images/block3-img1.jpg");
+    display: flex;
+    justify-content: center;
+    & .text{
+        font-size: 42px;
+        color: white;
+        line-height: 57.2px;
+        text-align: center;
+        max-width: 40%;
+        padding: 120px 0;
+    }
+}
