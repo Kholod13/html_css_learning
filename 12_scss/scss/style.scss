@@ -227,3 +227,21 @@ body, .wrapper{
         padding: 120px 0;
     }
 }
+.info-2{
+    padding: 120px 0;
+    & .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $gray_clr;
+        padding-bottom: 50px;
+    }
+    & .item-block{
+        display: flex;
+        & .img-block{
+
+        }
+        & .text-block{
+            
+        }
+    }
+}

@@ -236,3 +236,18 @@ body .container, .wrapper .container {
   max-width: 40%;
   padding: 120px 0;
 }
+
+.info-2 {
+  padding: 120px 0;
+}
+.info-2 .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #868585;
+  padding-bottom: 50px;
+}
+.info-2 .item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
