@@ -229,19 +229,80 @@ body, .wrapper{
 }
 .info-2{
     padding: 120px 0;
-    & .title{
+    & .title, & .title-2{
         font-size: 24px;
         font-weight: 700;
         color: $gray_clr;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
+    }
+    & .container .item-block:nth-child(2){
+        padding-top: 0px;
     }
     & .item-block{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        padding-top: 120px;
         & .img-block{
-
+            & img{
+                width: 100%;
+            }
+            & .buttons{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                & button{
+                    margin: 0 5px;
+                    background-color: transparent;
+                    & :hover{
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                        transition: 0.5s;
+                    }
+                }
+            }
         }
         & .text-block{
-            
+            & .title{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 0em;
+                color: $black_clr;
+            }
+            & li{
+                padding: 20px 0 0 50px;
+                list-style-type: none;
+                & li:first-child{
+                    padding-top: 0px;
+                }
+            }
+            & .text{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                color: $black_clr;
+            }
+            & .button{
+                border: 2px $black_clr solid;
+                margin: 50px 0;
+            }
+        }
+        & .item-block2-list{
+            & .number{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                color: $gray_clr;
+                padding: 20px 0 10px 0;
+            }
+            & li{
+                padding: 0;
+            }
+            & .title{
+                padding: 0;
+            }
         }
     }
 }
