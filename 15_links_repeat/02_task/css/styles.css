@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+}
+body .quote {
+  font-style: italic;
+}
+body .nav {
+  background-color: #E9E9E9;
+  border: 1px black solid;
+  max-width: 33%;
+}
+body .nav .title {
+  text-align: center;
+}

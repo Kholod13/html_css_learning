@@ -1,0 +1,14 @@
+body{
+   padding: 20px;
+   & .quote{
+      font-style: italic;
+   }
+   & .nav{
+      background-color: #E9E9E9;
+      border: 1px black solid;
+      max-width: 33%;
+      & .title{
+         text-align: center;
+      }
+   }
+}
