@@ -1,0 +1,8 @@
+@import "null_style.css";
+.header {
+  background-color: #A23646;
+}
+.header .logo {
+  color: red;
+  display: inline-block;
+}
