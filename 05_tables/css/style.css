@@ -1,7 +1,7 @@
 @import "null_style.css";
 .container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .header {
@@ -28,6 +28,48 @@
   background-color: #922F3C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.wrapper .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 20px;
+}
+.wrapper .container .main {
+  margin-right: 20px;
+}
+.wrapper .container .main .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+.wrapper .container .main hr {
+  border: 1px solid gray;
+}
+.wrapper .container .main .undertitle {
+  margin: 15px 0;
+  font-size: 12px;
+}
+.wrapper .container .main .text {
+  margin-bottom: 20px;
+}
+.wrapper .container .side .item {
+  background-color: #E9E9E9;
+  padding: 20px;
+}
+.wrapper .container .side .item .img img {
+  width: 100%;
+}
+.wrapper .container .side .item table {
+  padding-top: 10px;
+  text-align: left;
+}
+.wrapper .container .side .item table td {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.wrapper .container .side .item table th {
+  padding: 5px 0 0 0;
 }
 
 .footer {
